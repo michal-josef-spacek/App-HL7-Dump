@@ -1,0 +1,52 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.79.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 fef0fe9cddf965c4b66586a1e5552fb671860253 Changes
+SHA1 e51178a469c05037be8d75a9399475fd990d37b1 Dump.pm
+SHA1 f6f99b50ddf40ff89a85a50ceaef1acd9756d898 LICENSE
+SHA1 e4139d14ff0f29e874237aa134796c541aed52cd MANIFEST
+SHA1 26252649d7f1eca289670afeaafe224960440025 META.yml
+SHA1 4ca01e91b1eab8b475a3af017950c10659ebaa29 Makefile.PL
+SHA1 c9bc367e08732eca958c7e846b42db4c5a1af839 README
+SHA1 228d353dbc0e337d8a53db4387a5f3a7237a3780 bin/hl7dump
+SHA1 bfca79785e200b5dc73b888b0112a6587a39ab9b examples/ex1.pl
+SHA1 bce3c51bb369419603298064b78e14077b93af66 inc/Module/Install.pm
+SHA1 5c1a9d3a384a5262cbc105ab76d446047904c7fa inc/Module/Install/AuthorRequires.pm
+SHA1 d001b4b9a48395a8c4134b234a0e1789138427c5 inc/Module/Install/AuthorTests.pm
+SHA1 fe220f215f645500ce8f14ff5e19d9a28692af56 inc/Module/Install/Base.pm
+SHA1 b56ed8e42c600e08007d152cf0b1438a7c3b7f6e inc/Module/Install/Can.pm
+SHA1 99c531a17a67ce5250df2ae151cc48c80d914cde inc/Module/Install/Fetch.pm
+SHA1 76efdca3603159e0ae0e18f19fe72a0211a69529 inc/Module/Install/Makefile.pm
+SHA1 2e33e87882d60db3913da6284dd5295e5315e18a inc/Module/Install/Metadata.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 01978a56e76a58399af3bd4d022aa990b9669bee inc/Module/Install/Scripts.pm
+SHA1 c830b819e61bda5eca077c6291293bba61b3b9f2 inc/Module/Install/Win32.pm
+SHA1 cb52b9d6f88d512d448a6f35ed0af0d1201a134b inc/Module/Install/WriteAll.pm
+SHA1 33a17a6628f1c82a3c42793e9a233a1b86235d05 t/App-HL7-Dump/01-use.t
+SHA1 c70e7a36d8be9cf78b7cbad8dae74145d824d5b6 t/App-HL7-Dump/02-version.t
+SHA1 c94cf656856541dfc29e9135fc0e129c90aad601 xt/App-HL7-Dump/01-pod_coverage.t
+SHA1 1fb2dbe334ba48a1e62b3f68dfa900ef83fe8014 xt/App-HL7-Dump/02-pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJXAXbKAAoJEJe+XXKaIuTlb5IH/j4nrGcD9SBy0F5olII3oNCG
+A/rcIkZl3kR11KshnvtXM3Q2hFwdqHkMGW2/b5sq3+jWM7xMng6wY+esildQWFo0
+ucxyGDXQ8lxMTAKAnMc4owpM2mcYUZE1ipEbYYePGckBC7DUM0JI+v3OcrfAuakj
+YDnJE2VYroB70cDl9rnAK+kF4MW5YifOTXjeKppZwinaHU9VuuoHOY8zq6jeCHDy
+q72LaWdi0jA4JaxR2IpwALB/k3vszLuQF2iB1EtB+8xnj4+3sVhnvA3KnA/xNsXI
+Pq8E2E1NcotJ+i4SjJ+37kOlNCtEHyzPP4pQd1xLbJg1HWmNKWyJszFxMXcgIH0=
+=cDHV
+-----END PGP SIGNATURE-----
