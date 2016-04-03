@@ -8,7 +8,7 @@ use warnings;
 use App::HL7::Dump;
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Run.
 App::HL7::Dump->new->run;
@@ -72,6 +72,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut

@@ -12,7 +12,7 @@ use Net::HL7::Message;
 use Perl6::Slurp qw(slurp);
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Constructor.
 sub new {
@@ -203,6 +203,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
