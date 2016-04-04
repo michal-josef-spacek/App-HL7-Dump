@@ -36,8 +36,7 @@ sub new {
 		print STDERR "\t--version\tPrint version.\n";
 		exit 1;
 	}
-	$self->{'_hl7_file'} = shift @ARGV;
-	$self->{'_args'} = \@ARGV;
+	$self->{'_hl7_file'} = $ARGV[0];
 
 	# Object.
 	return $self;

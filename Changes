@@ -1,5 +1,6 @@
 0.02
  - Fix SYNOPSIS section in doc.
+ - Simplify of argument processing.
 
 0.01 2016-04-03T22:02:04+02:00
  - First version.
