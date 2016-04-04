@@ -111,9 +111,12 @@ App::HL7::Dump - Base class for hl7dump script.
 =head1 ERRORS
 
  new():
-         Cannot process any action.
          From Class::Utils::set_params():
                  Unknown parameter '%s'.
+
+ run():
+         Cannot parse HL7 file.
+                 File: %s
 
 =head1 EXAMPLE
 
