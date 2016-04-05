@@ -31,11 +31,15 @@ hl7dump - Script to dump hl7 file message.
 
 =head1 SYNOPSIS
 
- hl7dump [-h] [--version] hl7_file
+ hl7dump [-c] [-h] [--version] hl7_file
 
 =head1 ARGUMENTS
 
 =over 8
+
+=item * C<-c>
+
+ Color mode.
 
 =item * C<-h>
 

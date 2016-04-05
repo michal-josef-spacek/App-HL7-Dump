@@ -6,6 +6,7 @@ use warnings;
 
 # Modules.
 use Class::Utils qw(set_params);
+use English;
 use Error::Pure qw(err);
 use Getopt::Std;
 use Net::HL7::Message;
@@ -26,17 +27,28 @@ sub new {
 
 	# Process arguments.
 	$self->{'_opts'} = {
+		'c' => 0,
 		'h' => 0,
 	};
-	if (! getopts('h', $self->{'_opts'}) || @ARGV < 1
+	if (! getopts('ch', $self->{'_opts'}) || @ARGV < 1
 		|| $self->{'_opts'}->{'h'}) {
 
-		print STDERR "Usage: $0 [-h] [--version] hl7_file\n";
+		print STDERR "Usage: $0 [-c] [-h] [--version] hl7_file\n";
+		print STDERR "\t-c\t\tColor mode.\n";
 		print STDERR "\t-h\t\tHelp.\n";
 		print STDERR "\t--version\tPrint version.\n";
 		exit 1;
 	}
 	$self->{'_hl7_file'} = $ARGV[0];
+
+	# Load Term::ANSIColor.
+	if ($self->{'_opts'}->{'c'}) {
+		eval "require Term::ANSIColor;";
+		if ($EVAL_ERROR) {
+			err "Cannot load 'Term::ANSIColor'.",
+				'Eval error', $EVAL_ERROR;
+		}
+	}
 
 	# Object.
 	return $self;
@@ -66,7 +78,16 @@ sub run {
 				} else {
 					$print_val = $val;
 				}
-				print $seg->getName.'-'.$index.':'.$print_val."\n";
+				if ($self->{'_opts'}->{'c'}) {
+					print Term::ANSIColor::color('green').$seg->getName.
+						Term::ANSIColor::color('reset').'-'.
+						Term::ANSIColor::color('red').$index.
+						Term::ANSIColor::color('reset').':'.
+						Term::ANSIColor::color('bold white').
+						$print_val.Term::ANSIColor::color('reset')."\n";
+				} else {
+					print $seg->getName.'-'.$index.':'.$print_val."\n";
+				}
 			}
 		}
 	}
@@ -111,6 +132,8 @@ App::HL7::Dump - Base class for hl7dump script.
 =head1 ERRORS
 
  new():
+         Cannot load 'Term::ANSIColor'.
+                 Eval error: %s
          From Class::Utils::set_params():
                  Unknown parameter '%s'.
 
@@ -183,10 +206,13 @@ App::HL7::Dump - Base class for hl7dump script.
 =head1 DEPENDENCIES
 
 L<Class::Utils>,
+L<English>,
 L<Error::Pure>,
 L<Getopt::Std>,
 L<Net::HL7::Message>,
 L<Perl6::Slurp>.
+
+L<Term::ANSIColor> for color mode.
 
 =head1 REPOSITORY
 

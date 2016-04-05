@@ -22,8 +22,11 @@ no_index:
     - inc
     - t
     - xt
+recommends:
+  Term::ANSIColor: 0
 requires:
   Class::Utils: 0.03
+  English: 0
   Error::Pure: 0.15
   Getopt::Std: 0
   Net::HL7::Message: 0

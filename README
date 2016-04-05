@@ -2,9 +2,13 @@ NAME
     hl7dump - Script to dump hl7 file message.
 
 SYNOPSIS
-     hl7dump [-h] [--version] hl7_file
+     hl7dump [-c] [-h] [--version] hl7_file
 
 ARGUMENTS
+    *       "-c"
+
+             Color mode.
+
     *       "-h"
 
              Print help.
