@@ -108,6 +108,7 @@ App::HL7::Dump - Base class for hl7dump script.
 =head1 SYNOPSIS
 
  use App::HL7::Dump;
+
  my $app = App::HL7::Dump->new;
  $app->run;
 
