@@ -1,4 +1,5 @@
 0.04
+ - Add exit code do run() method.
  - Add second example with color output.
  - Improve LICENSE AND COPYRIGHT secion in doc.
  - Improve SYNOPSIS secion in doc.

@@ -62,6 +62,7 @@ sub run {
 	my $msg = Net::HL7::Message->new($hl7);
 	if (! $msg) {
 		err 'Cannot parse HL7 file.', 'File', $self->{'_hl7_file'};
+		return 1;
 	}
 
 	# Segment name: size
@@ -89,7 +90,7 @@ sub run {
 		}
 	}
 
-	return;
+	return 0;
 }
 
 1;
@@ -110,7 +111,7 @@ App::HL7::Dump - Base class for hl7dump script.
  use App::HL7::Dump;
 
  my $app = App::HL7::Dump->new;
- $app->run;
+ my $exit_code = $app->run;
 
 =head1 METHODS
 
@@ -124,11 +125,11 @@ Returns instance of object.
 
 =head2 C<run>
 
- $app->run;
+ my $exit_code = $app->run;
 
 Run method.
 
-Returns undef.
+Returns exit code (0 as success, > 0 as error).
 
 =head1 ERRORS
 
