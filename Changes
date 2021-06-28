@@ -1,4 +1,4 @@
-0.04
+0.04 2021-06-28T15:16:30+02:00
  - Add exit code do run() method.
  - Add second example with color output.
  - Add support for COLOR and NO_COLOR env variables.
