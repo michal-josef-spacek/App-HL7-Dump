@@ -2,6 +2,7 @@
  - Add exit code do run() method.
  - Add second example with color output.
  - Add support for COLOR and NO_COLOR env variables.
+ - Fix minimal version of Perl.
  - Improve LICENSE AND COPYRIGHT secion in doc.
  - Improve SYNOPSIS secion in doc.
  - Rewrite doc to use =head2.
