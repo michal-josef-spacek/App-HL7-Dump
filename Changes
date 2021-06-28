@@ -1,4 +1,5 @@
 0.04
+ - Add second example with color output.
 
 0.03 2018-02-07T08:06:09+01:00
  - Fix Makefile.PL for new version of Perl and no default »use lib '.'«.
