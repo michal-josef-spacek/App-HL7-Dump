@@ -17,7 +17,7 @@ install_script 'bin/hl7dump';
 license 'bsd';
 name 'App-HL7-Dump';
 readme_from 'bin/hl7dump';
-recommends 'Term::ANSIColor' => 0;
+recommends 'Term::ANSIColor' => 5.01;
 recursive_author_tests('xt');
 requires 'Class::Utils' => 0.03;
 requires 'English' => 0;

@@ -8,6 +8,9 @@ ARGUMENTS
     *       "-c"
 
              Color mode.
+             Color mode is controlled by ENV variables:
+             - COLOR=1 - set color without -c argument.
+             - NO_COLOR=1 - unset color with -c argument.
 
     *       "-h"
 

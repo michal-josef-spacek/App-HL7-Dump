@@ -38,6 +38,10 @@ sub new {
 	}
 	$self->{'_hl7_file'} = $ARGV[0];
 
+	if ($ENV{'COLOR'}) {
+		$self->{'_opts'}->{'c'} = 1;
+	}
+
 	# Load Term::ANSIColor.
 	if ($self->{'_opts'}->{'c'}) {
 		eval "require Term::ANSIColor;";
