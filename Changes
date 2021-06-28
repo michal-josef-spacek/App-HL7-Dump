@@ -1,4 +1,5 @@
 0.05
+ - Regen example.
 
 0.04 2021-06-28T15:16:30+02:00
  - Add exit code do run() method.
