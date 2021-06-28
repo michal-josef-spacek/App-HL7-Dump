@@ -5,6 +5,7 @@
  - Improve LICENSE AND COPYRIGHT secion in doc.
  - Improve SYNOPSIS secion in doc.
  - Rewrite doc to use =head2.
+ - Update bugtracker to Github.
  - Update copyright years.
 
 0.03 2018-02-07T08:06:09+01:00
