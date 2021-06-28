@@ -114,18 +114,21 @@ App::HL7::Dump - Base class for hl7dump script.
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new()>
+ my $app = App::HL7::Dump->new;
 
- Constructor.
+Constructor.
 
-=item C<run()>
+Returns instance of object.
 
- Run method.
- Returns undef.
+=head2 C<run>
 
-=back
+ $app->run;
+
+Run method.
+
+Returns undef.
 
 =head1 ERRORS
 
