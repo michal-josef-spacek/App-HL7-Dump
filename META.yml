@@ -8,6 +8,7 @@ build_requires:
   File::Spec::Functions: 0
   Test::More: 0
   Test::NoWarnings: 0
+  Test::Output: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.59
 distribution_type: module
