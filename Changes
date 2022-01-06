@@ -1,4 +1,5 @@
 0.05
+ - Move argument processing to run() method.
  - Regen example.
 
 0.04 2021-06-28T15:16:30+02:00

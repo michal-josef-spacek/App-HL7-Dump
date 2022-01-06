@@ -22,6 +22,14 @@ sub new {
 	# Process params.
 	set_params($self, @params);
 
+	# Object.
+	return $self;
+}
+
+# Run.
+sub run {
+	my $self = shift;
+
 	# Process arguments.
 	$self->{'_opts'} = {
 		'c' => 0,
@@ -50,14 +58,6 @@ sub new {
 				'Eval error', $EVAL_ERROR;
 		}
 	}
-
-	# Object.
-	return $self;
-}
-
-# Run.
-sub run {
-	my $self = shift;
 
 	# Get hl7_file.
 	my $hl7 = slurp($self->{'_hl7_file'});
