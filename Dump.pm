@@ -42,7 +42,7 @@ sub run {
 		print STDERR "\t-c\t\tColor mode.\n";
 		print STDERR "\t-h\t\tPrint help.\n";
 		print STDERR "\t--version\tPrint version.\n";
-		exit 1;
+		return 1;
 	}
 	$self->{'_hl7_file'} = $ARGV[0];
 
