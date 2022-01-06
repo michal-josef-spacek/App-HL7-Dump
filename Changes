@@ -2,6 +2,7 @@
  - Add test for constructor.
  - Move argument processing to run() method.
  - Regen example.
+ - Update copyright years.
 
 0.04 2021-06-28T15:16:30+02:00
  - Add exit code do run() method.
