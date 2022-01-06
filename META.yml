@@ -39,4 +39,4 @@ resources:
   homepage: https://github.com/tupinek/App-HL7-Dump
   license: http://opensource.org/licenses/bsd-license.php
   repository: git://github.com/tupinek/App-HL7-Dump
-version: '0.05'
+version: '0.06'
