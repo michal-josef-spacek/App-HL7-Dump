@@ -40,7 +40,7 @@ sub run {
 
 		print STDERR "Usage: $0 [-c] [-h] [--version] hl7_file\n";
 		print STDERR "\t-c\t\tColor mode.\n";
-		print STDERR "\t-h\t\tHelp.\n";
+		print STDERR "\t-h\t\tPrint help.\n";
 		print STDERR "\t--version\tPrint version.\n";
 		exit 1;
 	}

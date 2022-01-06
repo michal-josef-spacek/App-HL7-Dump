@@ -1,5 +1,6 @@
 0.05
  - Add test for constructor.
+ - Improve help message.
  - Move argument processing to run() method.
  - Regen example.
  - Update copyright years.
