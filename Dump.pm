@@ -149,6 +149,8 @@ Returns exit code (0 as success, > 0 as error).
 
 =head1 EXAMPLE1
 
+=for comment filename=dump_hl7_message.pl
+
  use strict;
  use warnings;
 
@@ -208,6 +210,8 @@ Returns exit code (0 as success, > 0 as error).
  # OBR-7:20160403211012
 
 =head1 EXAMPLE2
+
+=for comment filename=dump_hl7_message_ansi.pl
 
  use strict;
  use warnings;

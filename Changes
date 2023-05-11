@@ -1,4 +1,5 @@
 0.07
+ - Add better example names.
  - Fix repository author name.
  - Update copyright years.
  - Update Module::Install to 1.21 version.
