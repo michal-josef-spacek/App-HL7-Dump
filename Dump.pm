@@ -10,7 +10,7 @@ use Getopt::Std;
 use Net::HL7::Message;
 use Perl6::Slurp qw(slurp);
 
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 # Constructor.
 sub new {
@@ -301,6 +301,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.07
+0.08
 
 =cut
