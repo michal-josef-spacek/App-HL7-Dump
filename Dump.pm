@@ -281,7 +281,7 @@ L<Term::ANSIColor> for color mode.
 
 =head1 REPOSITORY
 
-L<https://github.com/tu pinek/App-HL7-Dump>
+L<https://github.com/michal-josef-spacek/App-HL7-Dump>
 
 =head1 AUTHOR
 

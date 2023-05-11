@@ -36,8 +36,8 @@ requires:
   Perl6::Slurp: 0
   perl: 5.6.0
 resources:
-  bugtracker: https://github.com/tupinek/App-HL7-Dump/issues
-  homepage: https://github.com/tupinek/App-HL7-Dump
+  bugtracker: https://github.com/michal-josef-spacek/App-HL7-Dump/issues
+  homepage: https://github.com/michal-josef-spacek/App-HL7-Dump
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/App-HL7-Dump
+  repository: git://github.com/michal-josef-spacek/App-HL7-Dump
 version: '0.07'
