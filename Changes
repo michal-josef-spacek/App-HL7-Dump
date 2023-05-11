@@ -1,6 +1,7 @@
 0.07
  - Add better example names.
  - Fix repository author name.
+ - Fix test on Windows.
  - Update copyright years.
  - Update Module::Install to 1.21 version.
 
